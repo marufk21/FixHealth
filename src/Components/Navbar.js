@@ -7,28 +7,28 @@ const Navbar = () => {
       <nav className="flex justify-between bg-gray-900 text-white w-full">
         <div className="px-5 xl:px-12 py-3 flex w-full items-center">
       <div className="flex mt-4">
-          <a className="text-3xl font-bold font-heading" href="#">
+          <a className="text-3xl font-bold font-heading" >
             <img className="h-12 m-auto" src={Icon} alt="logo" />
           </a>
           </div>
           <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
             <li>
-              <a className="hover:text-gray-200" href="#">
+              <a className="hover:text-gray-200" >
                 Home
               </a>
             </li>
             <li>
-              <a className="hover:text-gray-200" href="#">
+              <a className="hover:text-gray-200" >
                 Services
               </a>
             </li>
             <li>
-              <a className="hover:text-gray-200" href="#">
+              <a className="hover:text-gray-200" >
                 Blogs
               </a>
             </li>
             <li>
-              <a className="hover:text-gray-200" href="#">
+              <a className="hover:text-gray-200" >
                 About
               </a>
             </li>
@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         {/* Responsive navbar */}
-        <a className="navbar-burger self-center mr-12 xl:hidden" href="#">
+        <a className="navbar-burger self-center mr-12 xl:hidden" >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 hover:text-gray-200"
