@@ -1,0 +1,7 @@
+{
+    "doctors": [
+      { "id": 1, "name": "Dr. John Doe", "expertise": "Physiotherapist", "city": "New York" }
+
+    ]
+  }
+  
