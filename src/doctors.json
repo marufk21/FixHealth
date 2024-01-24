@@ -1,0 +1,101 @@
+{
+  "doctors": [
+    {
+      "name": "Dr. Ananya Sharma",
+      "expertise": "Orthopedics",
+      "city": "Delhi"
+    },
+    {
+      "name": "Dr. Vikram Singh",
+      "expertise": "Neurology",
+      "city": "Mumbai"
+    },
+    {
+      "name": "Dr. Priya Patel",
+      "expertise": "Cardiology",
+      "city": "Ahmedabad"
+    },
+    {
+      "name": "Dr. Rahul Kapoor",
+      "expertise": "Dermatology",
+      "city": "Kolkata"
+    },
+    {
+      "name": "Dr. Nisha Rajput",
+      "expertise": "Pediatrics",
+      "city": "Chandigarh"
+    }
+   
+  ],
+  "useCases": [
+    {
+      "patient": {
+        "name": "Rahul",
+        "age": 35,
+        "city": "Bangalore",
+        "previousExperience": "Yes"
+      },
+      "bookingFormSteps": [
+        "Name",
+        "Phone number",
+        "Age",
+        "City",
+        "Company",
+        "Chief complaints",
+        "Show best available doctors filtered for their city"
+      ]
+    },
+    {
+      "patient": {
+        "name": "Pooja",
+        "age": 42,
+        "city": "Chennai"
+      },
+      "bookingFormSteps": [
+        "Name",
+        "Phone number",
+        "Age",
+        "City",
+        "Company",
+        "Chief complaints",
+        "Any previous experience with physiotherapy",
+        "Show best available doctors filtered for their city"
+      ]
+    },
+    {
+      "patient": {
+        "name": "Kiran",
+        "age": 28,
+        "city": "Hyderabad",
+        "previousExperience": "No"
+      },
+      "bookingFormSteps": [
+        "Name",
+        "Phone number",
+        "Age",
+        "City",
+        "Company",
+        "Chief complaints",
+        "Show best available doctors filtered for their city"
+      ]
+    },
+    {
+      "patient": {
+        "name": "Amit",
+        "age": 45,
+        "city": "Pune"
+      },
+      "bookingFormSteps": [
+        "Name",
+        "Phone number",
+        "Age",
+        "City",
+        "Company",
+        "Chief complaints",
+        "Any previous experience with physiotherapy",
+        "Show best available doctors filtered for their city"
+      ]
+    }
+    
+  ]
+}
