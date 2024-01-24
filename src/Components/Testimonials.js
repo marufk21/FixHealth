@@ -47,22 +47,22 @@ const Testimonial = () => {
               </div>
             </div>
 
-            <div class="-mx-3 md:flex items-start">
-              <div class="px-3 md:w-1/3">
-                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div class="w-full flex mb-4 items-center">
-                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+            <div className="-mx-3 md:flex items-start">
+              <div className="px-3 md:w-1/3">
+                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div className="w-full flex mb-4 items-center">
+                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <img src="https://i.pravatar.cc/100?img=1" alt="" />
                     </div>
-                    <div class="flex-grow pl-3">
-                      <h6 class="font-bold text-sm uppercase text-gray-600">
+                    <div className="flex-grow pl-3">
+                      <h6 className="font-bold text-sm uppercase text-gray-600">
                         Kenzie Edgar.
                       </h6>
                     </div>
                   </div>
-                  <div class="w-full">
-                    <p class="text-sm leading-tight">
-                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                  <div className="w-full">
+                    <p className="text-sm leading-tight">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
                       Dr. Taylor's compassionate and skilled approach made my
@@ -70,26 +70,26 @@ const Testimonial = () => {
                       not only addressed my injury but also educated me on
                       preventive measures. I highly recommend Dr. Taylor and the
                       entire team for their top-notch care.
-                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
                     </p>
                   </div>
                 </div>
-                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div class="w-full flex mb-4 items-center">
-                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div className="w-full flex mb-4 items-center">
+                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <img src="https://i.pravatar.cc/100?img=2" alt="" />
                     </div>
-                    <div class="flex-grow pl-3">
-                      <h6 class="font-bold text-sm uppercase text-gray-600">
+                    <div className="flex-grow pl-3">
+                      <h6 className="font-bold text-sm uppercase text-gray-600">
                         Stevie Tifft.
                       </h6>
                     </div>
                   </div>
-                  <div class="w-full">
-                    <p class="text-sm leading-tight">
-                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                  <div className="w-full">
+                    <p className="text-sm leading-tight">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
                       I want to express my gratitude to Dr. Lewis for her
@@ -97,28 +97,28 @@ const Testimonial = () => {
                       a surgery. The personalized exercises she prescribed were
                       instrumental in my recovery. Harmony Physiotherapy is a
                       place where you can trust the professionals.
-                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="px-3 md:w-1/3">
-                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div class="w-full flex mb-4 items-center">
-                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+              <div className="px-3 md:w-1/3">
+                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div className="w-full flex mb-4 items-center">
+                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <img src="https://i.pravatar.cc/100?img=3" alt="" />
                     </div>
-                    <div class="flex-grow pl-3">
-                      <h6 class="font-bold text-sm uppercase text-gray-600">
+                    <div className="flex-grow pl-3">
+                      <h6 className="font-bold text-sm uppercase text-gray-600">
                         Tommie Ewart.
                       </h6>
                     </div>
                   </div>
-                  <div class="w-full">
-                    <p class="text-sm leading-tight">
-                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                  <div className="w-full">
+                    <p className="text-sm leading-tight">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
                       Dr. Harper's attention to detail and commitment to my
@@ -126,26 +126,26 @@ const Testimonial = () => {
                       orthopedic conditions and effective treatment plans truly
                       set him apart. I'm grateful for the excellent care I
                       received at Harmony Physiotherapy.
-                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
                     </p>
                   </div>
                 </div>
-                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div class="w-full flex mb-4 items-center">
-                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div className="w-full flex mb-4 items-center">
+                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <img src="https://i.pravatar.cc/100?img=4" alt="" />
                     </div>
-                    <div class="flex-grow pl-3">
-                      <h6 class="font-bold text-sm uppercase text-gray-600">
+                    <div className="flex-grow pl-3">
+                      <h6 className="font-bold text-sm uppercase text-gray-600">
                         Charlie Howse.
                       </h6>
                     </div>
                   </div>
-                  <div class="w-full">
-                    <p class="text-sm leading-tight">
-                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                  <div className="w-full">
+                    <p className="text-sm leading-tight">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
                       I cannot thank Dr. Chen enough for her dedication and
@@ -153,28 +153,28 @@ const Testimonial = () => {
                       approach, combining manual therapy and exercises, made a
                       significant difference in my recovery. I wholeheartedly
                       recommend Dr. Chen and Harmony Physiotherapy.
-                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="px-3 md:w-1/3">
-                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div class="w-full flex mb-4 items-center">
-                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+              <div className="px-3 md:w-1/3">
+                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div className="w-full flex mb-4 items-center">
+                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <img src="https://i.pravatar.cc/100?img=5" alt="" />
                     </div>
-                    <div class="flex-grow pl-3">
-                      <h6 class="font-bold text-sm uppercase text-gray-600">
+                    <div className="flex-grow pl-3">
+                      <h6 className="font-bold text-sm uppercase text-gray-600">
                         Nevada Herbertson.
                       </h6>
                     </div>
                   </div>
-                  <div class="w-full">
-                    <p class="text-sm leading-tight">
-                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                  <div className="w-full">
+                    <p className="text-sm leading-tight">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
                       I want to express my deepest gratitude to Dr. Emily
@@ -183,26 +183,26 @@ const Testimonial = () => {
                       personalized treatment plan and hands-on approach made a
                       significant difference in my daily life. I can now move
                       freely without constant discomfort. Thank you, Dr. Johnson
-                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
                     </p>
                   </div>
                 </div>
-                <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div class="w-full flex mb-4 items-center">
-                    <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                  <div className="w-full flex mb-4 items-center">
+                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
                       <img src="https://i.pravatar.cc/100?img=6" alt="" />
                     </div>
-                    <div class="flex-grow pl-3">
-                      <h6 class="font-bold text-sm uppercase text-gray-600">
+                    <div className="flex-grow pl-3">
+                      <h6 className="font-bold text-sm uppercase text-gray-600">
                         Kris Stanton.
                       </h6>
                     </div>
                   </div>
-                  <div class="w-full">
-                    <p class="text-sm leading-tight">
-                      <span class="text-lg leading-none italic font-bold text-gray-400 mr-1">
+                  <div className="w-full">
+                    <p className="text-sm leading-tight">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                         "
                       </span>
                       I had the pleasure of being treated by Dr. Turner at
@@ -210,7 +210,7 @@ const Testimonial = () => {
                       approach helped me recover from a sports injury swiftly. I
                       highly recommend Dr. Turner and the entire team for their
                       excellent care
-                      <span class="text-lg leading-none italic font-bold text-gray-400 ml-1">
+                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                         "
                       </span>
                     </p>

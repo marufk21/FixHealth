@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const ConsultationForm = () => {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: "",
     phone: "",
     age: "",
@@ -9,54 +9,30 @@ const ConsultationForm = () => {
     company: "",
     complaints: "",
     experience: false,
-  });
+  };
 
-  const [doctors, setDoctors] = useState([]);
-  const [error, setError] = useState(null);
-
+  const [formData, setFormData] = useState(initialFormData);
   const [bookingMessage, setBookingMessage] = useState("");
   const [isBookingDone, setIsBookingDone] = useState(false);
 
-  useEffect(() => {
-    const fetchDoctors = async () => {
-      try {
-        const response = await fetch("../doctors.json");
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
-        const data = await response.json();
-
-        const urlParams = new URLSearchParams(window.location.search);
-        const urlCity = urlParams.get("city");
-        const selectedCity = urlCity || formData.city;
-
-        const filteredDoctors = data.doctors.filter(
-          (doctor) => doctor.city.toLowerCase() === selectedCity.toLowerCase()
-        );
-        setDoctors(filteredDoctors);
-      } catch (error) {
-        setError(error.message);
-      }
-    };
-
-    fetchDoctors();
-  }, [formData.city]);
-
   const handleInputChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: type === "checkbox" ? checked : value,
-    }));
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
   const handleSubmit = async () => {
     try {
-      // Submit logic here...
-
-      // Assuming the booking is successful
-      setBookingMessage("Your booking is done");
-      setIsBookingDone(true);
+      // Check if all form fields are filled
+      if (Object.values(formData).every((field) => field !== "")) {
+        setBookingMessage("Your booking is done");
+        setIsBookingDone(true);
+      } else {
+        setBookingMessage("Please fill out all fields before submitting.");
+        setIsBookingDone(true);
+      }
     } catch (error) {
       console.error("Error submitting form:", error);
     }
@@ -64,7 +40,9 @@ const ConsultationForm = () => {
 
   const handleCloseBookingMessage = () => {
     setIsBookingDone(false);
+    setFormData(initialFormData);
   };
+
 
   return (
     <>
@@ -173,40 +151,21 @@ const ConsultationForm = () => {
             </button>
           </form>
 
-          <p className="mt-4 text-xl font-semibold mb-4">Available Doctors</p>
-          {doctors.length > 0 ? (
-            <ul>
-              {doctors.map((doctor, index) => (
-                <li key={index} className="text-gray-100">
-                  {`Dr. ${doctor.name} - ${doctor.expertise} - ${
-                    doctor.city
-                  } - ${
-                    formData.experience ? "Experience: Yes" : "Experience: No"
-                  }`}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-gray-100">
-              No doctors available for the selected criteria.
-            </p>
+          {/* Booking confirmation pop-up */}
+          {isBookingDone && (
+            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+              <div className="bg-dark p-4 rounded shadow">
+                <p className="text-lg font-semibold">{bookingMessage}</p>
+                <button
+                  className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                  onClick={handleCloseBookingMessage}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
           )}
         </div>
-
-        {/* Booking confirmation pop-up */}
-        {isBookingDone && (
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-            <div className="bg-dark p-4 rounded shadow">
-              <p className="text-lg font-semibold">{bookingMessage}</p>
-              <button
-                className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-                onClick={handleCloseBookingMessage}
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        )}
       </div>
     </>
   );
