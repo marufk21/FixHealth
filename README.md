@@ -17,7 +17,7 @@ Link: https://fix-health-redesign.netlify.app/
 - TypeScript
 - Tailwind CSS
 
-# Getting Started
+# Run Project
 
 Follow these steps to quickly show project:
 
