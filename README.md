@@ -1,6 +1,6 @@
 # FixHealth - Redesign
 
-Interactive UI Components.
+Redesigning of FixHealth Website Components.
 
 Link: https://fix-health-redesign.netlify.app/
 
@@ -8,7 +8,7 @@ Link: https://fix-health-redesign.netlify.app/
 
 - Based on Dark Theme
 - Attractive HeroImage
-- Consultation Booking Form 
+- Consultation Booking Form
 - Testimonials
 
 ## Tech Stack
@@ -23,10 +23,9 @@ Follow these steps to quickly show project:
 
 1. **Clone the Repository:**
 
-   ```bash
+```bash
    git clone https://github.com/marufk21/FixHealth
-
-   ```
+```
 
 2. **Command to run the project:**
 
