@@ -1,32 +1,88 @@
 {
   "doctors": [
-    {
-      "name": "Dr. Ananya Sharma",
-      "expertise": "Orthopedics",
-      "city": "Delhi"
-    },
-    {
-      "name": "Dr. Vikram Singh",
-      "expertise": "Neurology",
-      "city": "Mumbai"
-    },
-    {
-      "name": "Dr. Priya Patel",
-      "expertise": "Cardiology",
-      "city": "Ahmedabad"
-    },
-    {
-      "name": "Dr. Rahul Kapoor",
-      "expertise": "Dermatology",
-      "city": "Kolkata"
-    },
-    {
-      "name": "Dr. Nisha Rajput",
-      "expertise": "Pediatrics",
-      "city": "Chandigarh"
-    }
-   
+    { "name": "Dr. Ananya Sharma", "city": "Delhi" },
+    { "name": "Dr. Vikram Singh", "city": "Mumbai" },
+    { "name": "Dr. Priya Patel", "city": "Ahmedabad" },
+    { "name": "Dr. Rahul Kapoor", "city": "Kolkata" },
+    { "name": "Dr. Nisha Rajput", "city": "Chandigarh" },
+    { "name": "Dr. Aarav Joshi", "city": "Bangalore" },
+    { "name": "Dr. Meera Gupta", "city": "Jaipur" },
+    { "name": "Dr. Raj Singhania", "city": "Lucknow" },
+    { "name": "Dr. Pooja Verma", "city": "Hyderabad" },
+    { "name": "Dr. Aditya Malhotra", "city": "Chennai" },
+    { "name": "Dr. Sneha Reddy", "city": "Bangalore" },
+    { "name": "Dr. Arjun Yadav", "city": "Pune" },
+    { "name": "Dr. Neha Kapoor", "city": "Bhopal" },
+    { "name": "Dr. Sanjay Sharma", "city": "Ahmedabad" },
+    { "name": "Dr. Aishwarya Patel", "city": "Jaipur" },
+    { "name": "Dr. Rohan Kumar", "city": "Kolkata" },
+    { "name": "Dr. Natasha Singh", "city": "Mumbai" },
+    { "name": "Dr. Akshay Verma", "city": "Delhi" },
+    { "name": "Dr. Riya Sharma", "city": "Chandigarh" },
+    { "name": "Dr. Sameer Verma", "city": "Lucknow" },
+    { "name": "Dr. Anika Sinha", "city": "Bangalore" },
+    { "name": "Dr. Arnav Thakur", "city": "Pune" },
+    { "name": "Dr. Ishita Singh", "city": "Chennai" },
+    { "name": "Dr. Arjun Reddy", "city": "Hyderabad" },
+    { "name": "Dr. Aaradhya Kapoor", "city": "Bhopal" },
+    { "name": "Dr. Vivaan Yadav", "city": "Jaipur" },
+    { "name": "Dr. Avni Sharma", "city": "Ahmedabad" },
+    { "name": "Dr. Yash Kapoor", "city": "Kolkata" },
+    { "name": "Dr. Dia Patel", "city": "Mumbai" },
+    { "name": "Dr. Advait Sinha", "city": "Delhi" },
+    { "name": "Dr. Anvi Verma", "city": "Chandigarh" },
+    { "name": "Dr. Krish Reddy", "city": "Lucknow" },
+    { "name": "Dr. Aanya Thakur", "city": "Bangalore" },
+    { "name": "Dr. Kian Malhotra", "city": "Pune" },
+    { "name": "Dr. Anvi Sharma", "city": "Chennai" },
+    { "name": "Dr. Arjun Reddy", "city": "Hyderabad" },
+    { "name": "Dr. Aria Yadav", "city": "Bhopal" },
+    { "name": "Dr. Kabir Kapoor", "city": "Jaipur" },
+    { "name": "Dr. Zara Patel", "city": "Ahmedabad" },
+    { "name": "Dr. Vivan Singh", "city": "Kolkata" },
+    { "name": "Dr. Aarohi Verma", "city": "Mumbai" },
+    { "name": "Dr. Aarav Sinha", "city": "Delhi" },
+    { "name": "Dr. Anika Sharma", "city": "Chandigarh" },
+    { "name": "Dr. Aanya Verma", "city": "Lucknow" },
+    { "name": "Dr. Advait Thakur", "city": "Bangalore" },
+    { "name": "Dr. Diya Patel", "city": "Pune" },
+    { "name": "Dr. Advik Reddy", "city": "Chennai" },
+    { "name": "Dr. Aaradhya Kapoor", "city": "Hyderabad" },
+    { "name": "Dr. Arnav Yadav", "city": "Bhopal" },
+    { "name": "Dr. Aashvi Kapoor", "city": "Jaipur" },
+    { "name": "Dr. Arusha Patel", "city": "Ahmedabad" },
+    { "name": "Dr. Aarav Singh", "city": "Kolkata" },
+    { "name": "Dr. Anaya Verma", "city": "Mumbai" },
+    { "name": "Dr. Aanya Sinha", "city": "Delhi" },
+    { "name": "Dr. Arjun Verma", "city": "Chandigarh" },
+    { "name": "Dr. Aisha Yadav", "city": "Lucknow" },
+    { "name": "Dr. Advait Kapoor", "city": "Bangalore" },
+    { "name": "Dr. Aarav Thakur", "city": "Pune" },
+    { "name": "Dr. Aditi Sharma", "city": "Chennai" },
+    { "name": "Dr. Advik Reddy", "city": "Hyderabad" },
+    { "name": "Dr. Anaya Kapoor", "city": "Bhopal" },
+    { "name": "Dr. Atharv Yadav", "city": "Jaipur" },
+    { "name": "Dr. Aanya Patel", "city": "Ahmedabad" },
+    { "name": "Dr. Arnav Kapoor", "city": "Kolkata" },
+    { "name": "Dr. Anika Sharma", "city": "Mumbai" },
+    { "name": "Dr. Aditya Sinha", "city": "Delhi" },
+    { "name": "Dr. Aarohi Verma", "city": "Chandigarh" },
+    { "name": "Dr. Advait Thakur", "city": "Lucknow" },
+    { "name": "Dr. Diya Patel", "city": "Bangalore" },
+    { "name": "Dr. Aarav Sinha", "city": "Pune" },
+    { "name": "Dr. Anvi Yadav", "city": "Chennai" },
+    { "name": "Dr. Arjun Reddy", "city": "Hyderabad" },
+    { "name": "Dr. Aanya Thakur", "city": "Bhopal" },
+    { "name": "Dr. Vivan Kapoor", "city": "Jaipur" },
+    { "name": "Dr. Zara Patel", "city": "Ahmedabad" },
+    { "name": "Dr. Vivaan Singh", "city": "Kolkata" },
+    { "name": "Dr. Aarohi Verma", "city": "Mumbai" },
+    { "name": "Dr. Advik Sinha", "city": "Delhi" },
+    { "name": "Dr. Aanya Sharma", "city": "Chandigarh" },
+    { "name": "Dr. Krish Yadav", "city": "Lucknow" },
+    { "name": "Dr. Arnav Thakur", "city": "Bangalore" }
   ],
+
   "useCases": [
     {
       "patient": {
@@ -96,6 +152,5 @@
         "Show best available doctors filtered for their city"
       ]
     }
-    
   ]
 }

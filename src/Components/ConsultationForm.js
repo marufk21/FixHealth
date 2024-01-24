@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import doctorData from "../doctors.json";
 
 const ConsultationForm = () => {
   const initialFormData = {
@@ -14,6 +15,16 @@ const ConsultationForm = () => {
   const [formData, setFormData] = useState(initialFormData);
   const [bookingMessage, setBookingMessage] = useState("");
   const [isBookingDone, setIsBookingDone] = useState(false);
+  const [availableDoctors, setAvailableDoctors] = useState([]);
+
+  useEffect(() => {
+    setAvailableDoctors(
+      doctorData.doctors.map((doctor) => ({
+        name: doctor.name,
+        city: doctor.city,
+      }))
+    );
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -27,7 +38,20 @@ const ConsultationForm = () => {
     try {
       // Check if all form fields are filled
       if (Object.values(formData).every((field) => field !== "")) {
-        setBookingMessage("Your booking is done");
+        // Filter doctors based on the patient's city
+        const userEnteredCity = formData.city.trim().toLowerCase();
+        const filteredDoctors = availableDoctors.filter(
+          (doctor) => doctor.city.toLowerCase() === userEnteredCity
+        );
+
+        setBookingMessage(
+          filteredDoctors.length > 0
+            ? `Your booking is done. Available doctors in ${userEnteredCity}: ${filteredDoctors
+                .map((doctor) => doctor.name)
+                .join(", ")}`
+            : `No available doctors in ${userEnteredCity}.`
+        );
+
         setIsBookingDone(true);
       } else {
         setBookingMessage("Please fill out all fields before submitting.");
@@ -42,7 +66,6 @@ const ConsultationForm = () => {
     setIsBookingDone(false);
     setFormData(initialFormData);
   };
-
 
   return (
     <>
@@ -141,23 +164,25 @@ const ConsultationForm = () => {
                 className="w-full rounded-md focus:ring focus:border-violet-500 text-gray-800 placeholder-gray-400 border-2 border-gray-700 py-2 px-3"
               ></textarea>
             </div>
-            <button
-              type="button"
-              onClick={handleSubmit}
-              className="w-full py-2 font-semibold rounded bg-[#44b5c4] text-gray-900 hover:bg-[#2e858e] focus:outline-none focus:ring focus:border-violet-500"
-            >
-              {" "}
-              Start Your Recovery
-            </button>
+
+            <div>
+              <button
+                type="button"
+                onClick={handleSubmit}
+                className="w-full py-2 font-semibold rounded bg-[#44b5c4] text-gray-900 hover:bg-[#2e858e] focus:outline-none focus:ring focus:border-violet-500"
+              >
+                Start Your Recovery
+              </button>
+            </div>
           </form>
 
           {/* Booking confirmation pop-up */}
           {isBookingDone && (
             <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-              <div className="bg-dark p-4 rounded shadow">
+              <div className="bg-gray-800 p-6 rounded-lg shadow-md text-white">
                 <p className="text-lg font-semibold">{bookingMessage}</p>
                 <button
-                  className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                  className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
                   onClick={handleCloseBookingMessage}
                 >
                   Close
