@@ -68,8 +68,8 @@ const ConsultationForm = () => {
   return (
     <>
       <div className="w-full px-6 py-9 rounded-xl sm:px-12 md:px-16 xl:col-span-2 bg-gray-900">
-        <span className="block mb-2 text-[#44b5c4] text-lg font-semibold">
-          Book an Appointment for FREE
+        <span className="block mt-6 mb-10 text-[#44b5c4] text-3xl font-semibold">
+          Book an Appointment for Free
         </span>
         <div className="booking-form-container">
           <form noValidate="" className="self-stretch space-y-4">
