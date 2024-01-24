@@ -36,9 +36,7 @@ const ConsultationForm = () => {
 
   const handleSubmit = async () => {
     try {
-      // Check if all form fields are filled
       if (Object.values(formData).every((field) => field !== "")) {
-        // Filter doctors based on the patient's city
         const userEnteredCity = formData.city.trim().toLowerCase();
         const filteredDoctors = availableDoctors.filter(
           (doctor) => doctor.city.toLowerCase() === userEnteredCity

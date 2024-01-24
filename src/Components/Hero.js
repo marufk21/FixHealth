@@ -1,8 +1,5 @@
-import React, { useState, useEffect } from "react";
 import ConsultationForm from "./ConsultationForm";
 const Hero = () => {
-  
-
   return (
     <>
       <section className="p-6 bg-gray-800 text-gray-100">
